@@ -1,0 +1,73 @@
+/* style.css */
+
+body {
+    background-color: #111111;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Title Styling */
+.title {
+    margin-top: 20px; /* Adds space from the top of the page */
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #f60000;
+   
+}
+
+.title span {
+    font-size: 7rem;
+    color: hwb(244 33% 7%);
+    text-shadow: 4px 3px 4px hsla(0, 0%, 99%, 0.96);
+}
+
+/* Hover Section Centering */
+.hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Allows this section to take up remaining space */
+    width: 100%; /* Centers content horizontally */
+}
+
+/* Button and hover effect styling */
+.hv {
+    position: relative;
+    display: inline-block;
+}
+
+.hv::before {
+    content: " ";
+    color: #fff;
+    margin-right: 5px;
+}
+
+.hv::after {
+    content: " here";
+    color: #fff;
+    margin-left: 5px;
+}
+
+button {
+    transition: all 0.5s ease;
+    color: #fff;
+    border: 3px solid white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+button:hover {
+    color: hsl(0, 0%, 0%);
+    background-color: #fff;
+}
